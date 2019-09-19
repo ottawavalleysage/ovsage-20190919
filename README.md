@@ -112,17 +112,17 @@ This should go pretty quick and you will have a base image ready to go.
 
 Try it out:
 
-`docker run - <your-docker-id>/alpine cat /etc/os-release`
+`docker run <your-docker-id>/alpine cat /etc/os-release`
 
 So it is working. Try this one:
 
-`docker run - <your-docker-id>/alpine bash`
+`docker run <your-docker-id>/alpine bash`
 
 What happened?
 
 I did mention this was a minimal image and Alpine uses busybox, so the default shell is /bin/sh
 
-Try that: `docker run - <your-docker-id>/alpine sh`
+Try that: `docker run <your-docker-id>/alpine sh`
 
 No errors right?
 
