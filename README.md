@@ -12,7 +12,7 @@ and we have a nautical theme with Docker itself.
 
 ## Building your own container
 
-While Docker Hub provides lots of readt to use containers, they may not always
+While Docker Hub provides lots of ready to use containers, they may not always
 meet our requirements. Maybe we just do not trust other people's builds, they
 don't have what we want, they are too big, etc. This is not a problem, as we
 can roll our own for pretty much anything we want.
@@ -91,14 +91,14 @@ CMD ["/bin/sh"]
 I have a USB stick with the necessary image on it, or you can download it from
 the web server running on my MicroPC. I'll provide the address in a moment.
 
-Tonight's address is: 192.168.8.203
+Tonight's address is: 192.168.8.203:8000
 
 Regardless of the system you are using, you will probably want a directory for this exercise. I'm using alpine, but feel free to call it what you want. Perform the following operations:
 
 ```
 mkdir alpine
 cd alpine
-curl -O http://192.168.8.203/alpine-minirootfs-3.10.2-x86_64.tar.gz
+curl -O http://192.168.8.203:8000/alpine-minirootfs-3.10.2-x86_64.tar.gz
 ls
 ```
 
@@ -185,11 +185,11 @@ Do we have curl? Probably not, so get that first:
 
 We should have something to test with, so get the test.asciidoc file from the MicroPC 
 
-`curl -O http://192.168.8.203/test.asciidoc`
+`curl -O http://192.168.8.203:8000/test.asciidoc`
 
 And since it needs some styling, grab the asciidoc.css as well.
 
-`curl -O http://192.168.8.203/asciidoc.css`
+`curl -O http://192.168.8.203:8000/asciidoc.css`
 
 So have a look at the `test.asciidoc` file (I cut out a lot of it here):
 
@@ -262,6 +262,8 @@ mimetype.assign = (
 Rather than have to do this a couple of times, we can adjust our `Dockerfile` now.
 
 Rename your `Dockerfile` to `Dockerfile-alpine` and create a new one.
+
+This is not completed yet... currently in edit
 
 ```
 FROM <your-docker-id>/alpine
