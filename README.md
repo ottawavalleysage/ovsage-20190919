@@ -274,7 +274,7 @@ RUN apk update && apk upgrade \
     && apk add asciidoctor lighttpd curl
 
 RUN gem install --no-document asciidoctor-pdf --pre
-RUN gem install rouge asciidoctor-diagram coderay
+RUN gem install --no-document rouge asciidoctor-diagram coderay
 
 RUN mkdir ${DOCUMENT_DIR}
 
@@ -282,10 +282,8 @@ WORKDIR ${DOCUMENT_DIR}
 
 VOLUME ${DOCUMENT_DIR}
 
-CMD ["hugo","server","--disableFastRender","--bind","0.0.0.0"]
-`
-apk add lighttpd`
-apk add lighttpdapk add lighttpd
+CMD ["lighttpd", "-D", "-f","lighttpd.conf"]
+```
 
 
 
