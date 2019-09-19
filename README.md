@@ -102,7 +102,7 @@ curl -O http://192.168.8.203:8000/alpine-minirootfs-3.10.2-x86_64.tar.gz
 ls
 ```
 
-You should see the file and you can now create your `Dockerfile`.
+You should see the file and you can now create your `Dockerfile` using the content as shown above.
 
 Once you have created it, issue the build command:
 
@@ -135,6 +135,10 @@ session. You get the same result with `docker run --interactive --tty
 <your-docker-id>/alpine sh` If you have a ENTRYPOINT defined, you need a little
 more on the command line, `docker run -it --entrypoint /bin/sh
 <your-docker-id>/alpine`.
+
+Exit from docker
+
+`exit`
 
 ## Making this more useful
 
@@ -170,7 +174,7 @@ we alter the dockerfile.
 
 We might want some software installed. 
 
-Don't do any of this yet.
+**Don't do any of this yet.**
 
 We can do this intereactively as well. What do we want to do with our
 container? I might want to have a static site generator installed like the hugo
