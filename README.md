@@ -321,6 +321,6 @@ You also whould have started up in the /www directory
 
 From Grigor Khachatryan's Docker for Beginners series:
 - [Part 1: Setup](https://medium.com/@Grigorkh/docker-for-beginners-part-1-setup-e3ad9f4ba25e)
-- [Running your first container](https://medium.com/@Grigorkh/docker-for-beginners-part-2-running-your-first-container-7cb1ef829f79)
-- [Webapps with Docker](https://medium.com/@Grigorkh/docker-for-beginners-part-3-webapps-with-docker-18f2243c144e)
-- [Deploying an app to a Swarm](https://medium.com/@Grigorkh/docker-for-beginners-part-4-deploying-an-app-to-a-swarm-620b4d67e7c3)
+- [Part 2: Running your first container](https://medium.com/@Grigorkh/docker-for-beginners-part-2-running-your-first-container-7cb1ef829f79)
+- [Part 3: Webapps with Docker](https://medium.com/@Grigorkh/docker-for-beginners-part-3-webapps-with-docker-18f2243c144e)
+- [Part 4: Deploying an app to a Swarm](https://medium.com/@Grigorkh/docker-for-beginners-part-4-deploying-an-app-to-a-swarm-620b4d67e7c3)
