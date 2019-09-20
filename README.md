@@ -267,7 +267,7 @@ Rather than have to do this a couple of times, we can adjust our `Dockerfile` no
 
 Rename your `Dockerfile` to `Dockerfile-alpine` and create a new one.
 
-This is not completed yet... currently in edit
+**Note:** This is not completed yet... currently in edit
 
 ```
 FROM <your-docker-id>/alpine
