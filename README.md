@@ -147,7 +147,7 @@ I suspect that the first thing you would want to do is make sure there are no up
 Open a shell and update the system:
 
 ```
-docker run <your-docker-id>/alpine sh
+docker run -it <your-docker-id>/alpine sh
 apk update
 apk upgrade
 ```
@@ -289,18 +289,34 @@ VOLUME ${DOCUMENT_DIR}
 CMD ["lighttpd", "-D", "-f","lighttpd.conf"]
 ```
 
+So we will rebuild our image, or rather create a new image based on our existing base image:
 
+`docker build -t <your-docker-id>/alpine-asciidoctor .`
+
+This will take a little longer. When completed, run it to get a command shell
+
+`docker run -it <your-docker-id>/alpine-asciidoctor sh`
+
+When you get your prompt, you can check to see if you can see the installed software:
+
+```
+which asciidoctor
+which lighttpd
+which curl
+```
+
+You also whould have started up in the /www directory
 
 # References and Useful Info
 
-[Alpine Linux](https://alpinelinux.org)
-[Asciidoctor](https://asciidoctor.org)
-[Lighttpd](http://lighttpd.org)
+- [Alpine Linux](https://alpinelinux.org)
+- [Asciidoctor](https://asciidoctor.org)
+- [Lighttpd](http://lighttpd.org)
 
 ## Getting started with Docker
 
 From Grigor Khachatryan's Docker for Beginners series:
-[Part 1: Setup](https://medium.com/@Grigorkh/docker-for-beginners-part-1-setup-e3ad9f4ba25e)
-[Running your first container](https://medium.com/@Grigorkh/docker-for-beginners-part-2-running-your-first-container-7cb1ef829f79)
-[Webapps with Docker](https://medium.com/@Grigorkh/docker-for-beginners-part-3-webapps-with-docker-18f2243c144e)
-[Deploying an app to a Swarm](https://medium.com/@Grigorkh/docker-for-beginners-part-4-deploying-an-app-to-a-swarm-620b4d67e7c3)
+- [Part 1: Setup](https://medium.com/@Grigorkh/docker-for-beginners-part-1-setup-e3ad9f4ba25e)
+- [Running your first container](https://medium.com/@Grigorkh/docker-for-beginners-part-2-running-your-first-container-7cb1ef829f79)
+- [Webapps with Docker](https://medium.com/@Grigorkh/docker-for-beginners-part-3-webapps-with-docker-18f2243c144e)
+- [Deploying an app to a Swarm](https://medium.com/@Grigorkh/docker-for-beginners-part-4-deploying-an-app-to-a-swarm-620b4d67e7c3)
