@@ -1,3 +1,4 @@
+# October Meeting - 2019-09-19
 
 We are continuing the container theme. Tonight we will create a container from
 scratch and add a few utilities to it. The good news is that the base image
