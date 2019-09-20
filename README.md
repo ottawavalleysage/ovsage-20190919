@@ -319,7 +319,7 @@ You also whould have started up in the /www directory
 
 ## Getting started with Docker
 
-From Grigor Khachatryan's Docker for Beginners series:
+From Grigor Khachatryan's "Docker for Beginners" series:
 - [Part 1: Setup](https://medium.com/@Grigorkh/docker-for-beginners-part-1-setup-e3ad9f4ba25e)
 - [Part 2: Running your first container](https://medium.com/@Grigorkh/docker-for-beginners-part-2-running-your-first-container-7cb1ef829f79)
 - [Part 3: Webapps with Docker](https://medium.com/@Grigorkh/docker-for-beginners-part-3-webapps-with-docker-18f2243c144e)
