@@ -244,9 +244,12 @@ Install lighttpd and create a minimal config for it.
 
 `apk add lighttpd`
 
-We need a place to server from, so for now reate a /www directory
+We need a place to serve web pages from, so for now create a /www directory
 
-`mkdir /www`
+```
+mkdir /www
+mkdir /www/pages
+```
 
 create a minimal config file for lighttpd:
 
